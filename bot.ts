@@ -12,7 +12,7 @@ bot.on("message", async (ctx) => {
   const userId = ctx.message.from.id;
   const date = new Date();
   console.log(
-    `${date.getFullYear()}-${date.getMonth()}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} / ${userId}`,
+    `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} / ${userId}`,
   );
   ctx.reply(date.toString());
 });
